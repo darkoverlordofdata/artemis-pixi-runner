@@ -2,6 +2,7 @@
 
 The pixi.js endless runner demo implemented using artemis.
 
+<iframe src="https://raw.githubusercontent.com/darkoverlordofdata/artemis-pixi-runner/master/web/index.html"></iframe>
 # MIT License
 
 Copyright (c) 2015 Bruce Davidson &lt;darkoverlordofdata@gmail.com&gt;
