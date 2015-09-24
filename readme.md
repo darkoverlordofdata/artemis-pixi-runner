@@ -1,4 +1,4 @@
-# Runer
+# Runner
 
 The pixi.js endless runner demo implemented using artemis.
 

@@ -6,15 +6,15 @@ module example.core {
 
   import Constants = example.core.Constants;
   import EndlessSystem = example.systems.EndlessSystem;
-  import MovementSystem = example.systems.MovementSystem;
+  //import MovementSystem = example.systems.MovementSystem;
   import PlayerInputSystem = example.systems.PlayerInputSystem;
-  import SpriteRenderSystem = example.systems.SpriteRenderSystem;
+  //import SpriteRenderSystem = example.systems.SpriteRenderSystem;
 
   export class GameScreen {
 
     private world:World;
 
-    private spriteRenderSystem:SpriteRenderSystem;
+    //private spriteRenderSystem:SpriteRenderSystem;
 
     constructor(sprites, res) {
 
@@ -22,10 +22,10 @@ module example.core {
 
       world.setManager(new GroupManager());
       world.setSystem(new EndlessSystem());
-      world.setSystem(new MovementSystem());
+      //world.setSystem(new MovementSystem());
       world.setSystem(new PlayerInputSystem());
 
-      this.spriteRenderSystem = world.setSystem(new SpriteRenderSystem(sprites), true);
+      //this.spriteRenderSystem = world.setSystem(new SpriteRenderSystem(sprites), true);
 
       world.initialize();
       world.createEntityFromTemplate('endless', res.background, 60, 0).addToWorld();
@@ -38,7 +38,7 @@ module example.core {
 
       this.world.setDelta(delta);
       this.world.process();
-      this.spriteRenderSystem.process();
+      //this.spriteRenderSystem.process();
     }
   }
 }
